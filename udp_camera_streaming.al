@@ -41,17 +41,9 @@
             <File>rtl/verilog-ethernet/rtl/arp_eth_tx.v</File>
             <File>rtl/verilog-ethernet/rtl/arp_cache.v</File>
             <File>al_ip/pll_sys_clk.v</File>
-            <File>rtl/sdram_picorv32/picosoc/sdram_ctrl.v</File>
-            <File>rtl/sdram_picorv32/picosoc/simpleuart.v</File>
-            <File>rtl/sdram_picorv32/picosoc/picosoc.v</File>
-            <File>rtl/sdram_picorv32/picorv32.v</File>
             <File>rtl/verilog-ethernet/lib/axis/rtl/arbiter.v</File>
             <File>rtl/verilog-ethernet/lib/axis/rtl/priority_encoder.v</File>
             <File>rtl/verilog-ethernet/lib/axis/rtl/axis_fifo.v</File>
-            <File>al_ip/scratchpad_memory.v</File>
-            <File>rtl/sdram_picorv32/picosoc/i2c.v</File>
-            <File>rtl/sdram_picorv32/picosoc/I2C_master.v</File>
-            <File>rtl/bc_fpga_core.v</File>
             <File>rtl/axis_ov2640_core.v</File>
             <File>rtl/myRSP_packetizer.v</File>
             <File>rtl/sccb_v1/camera_init.v</File>
