@@ -1,14 +1,21 @@
-# UDP video streaming demonstration
-FPGA captures OV2640 frames, encapsulates as UDP/IP packets, 
-and broadcasts over 100BASE-T Ethernet. 
-Wireshark confirms correct Ethernet/IP/UDP header construction.
+# FPGA UDP Video Streaming — OV2640 Camera to PC (August 2022)
+Pure-HDL implementation of a real-time video streaming system on FPGA.
+Captures OV2640 camera frames, encapsulates them as UDP/IP/Ethernet packets, 
+and broadcasts over 100BASE-T at near-real-time latency.
 
-## Demo (2022-09)
-- [UDP video broadcast — camera-to-PC with Wireshark validation](https://youtu.be/XYwl4VXPEho)
+## Architecture
+Camera (OV2640) → SCCB Init → AXI-Stream Capture 
+→ RSP Packetizer → UDP/IP Stack → Ethernet MAC (MII) → PHY → PC
 
-## How to change config
+## Demo
+[UDP video streaming — live camera feed with Wireshark](リンク)
 
-## dependencies 
-- OpenGL
-- freeglut
-- boost
+## Key Features
+- Custom UDP/IP/Ethernet stack (verilog-ethernet)
+- OV2640 camera initialization via SCCB/I2C
+- Custom RSP packetizer for frame segmentation
+- PC receiver with OpenGL rendering
+- Built on Anlogic EG4S20 (Tang Primer)
+
+## Dependencies
+- OpenGL, freeglut, boost (PC receiver)
