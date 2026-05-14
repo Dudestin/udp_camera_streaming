@@ -1,11 +1,11 @@
 # FPGA UDP Video Streaming — OV2640 Camera to PC
-Pure-HDL implementation of a real-time video streaming system on FPGA.
+Pure-HDL implementation of a real-time video streaming system on FPGA.  
 Captures OV2640 camera frames, encapsulates them as UDP/IP/Ethernet packets, 
 and broadcasts over 100BASE-T at near-real-time latency.
 
 ## Architecture
 Camera (OV2640) → SCCB Init → AXI-Stream Capture 
-→ RSP Packetizer → UDP/IP Stack → Ethernet MAC (MII) → PHY → PC
+→ RSP Packetizer → UDP-IP Stack → Ethernet MAC (MII) → PHY → PC
 
 ## Demo (2022-09)
 [UDP video streaming — live camera feed with Wireshark](https://youtu.be/XYwl4VXPEho)
